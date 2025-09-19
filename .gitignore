@@ -1,0 +1,13 @@
+# Ignorar TODO por defecto
+*
+
+# Permitir bajar a subcarpetas
+!*/
+
+# Permitir solo estos tipos
+!*.html
+!*.css
+!*.js
+
+# Asegurar que el propio .gitignore quede trackeado
+!.gitignore
