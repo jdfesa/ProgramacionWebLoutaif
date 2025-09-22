@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="" method="get">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+        <div>
+            <label for="email">Correo</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" placeholder="Escribe la URL de tu pagina.">
+        </div>
+
+        <div>
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha" id="fecha">
+        </div>
+
+        <div>
+            <label for="hora">Tiempo:</label>
+            <input type="time" name="hora" id="hora">
+        </div>
+
+        <div>
+            <label for="fechahora">Fecha y hora:</label>
+            <input type="datetime-local" name="fechahora" id="fechahora" step="60">
+            <span>UTC</span>
+        </div>
+
+        <div>
+            <label for="mes">Mes:</label>
+            <input type="month" name="mes" id="mes">
+        </div>
+
+        <div>
+            <label for="semana">Semana</label>
+            <input type="week" name="semana" id="semana">
+        </div>
+        
+        <div>
+            <label for="numero">Numero (min -10, max 10)</label>
+            <input type="number" name="numero" id="numero" min="-10" max="10">
+        </div>
+
+        <div>
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" id="telefono">
+        </div>
+
+        <div>
+            <label for="busqueda">Busqueda</label>
+            <input type="search" name="busqueda" id="busqueda">
+
+        </div>
+        <div>
+            <label for="color">Color favorito</label>
+            <input type="color" name="color" id="color">
+        </div>
+
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
