@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de registro - Mi web</title>
+  </head>
+  <body>
+    <h1>Formulario de registro</h1>
+    <form method="get" action="">
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" maxlength="50" />
+      </div>
+
+      <div>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" maxlength="50" />
+      </div>
+      <div>
+        <span>Sexo</span>
+        <input type="radio" name="sexo" id="sexo-hombre" value="hombre" />
+        <label for="sexo-hombre">Hombre</label>
+
+        <input type="radio" name="sexo" id="sexo-mujer" value="mujer" />
+        <label for="sexo-mujer">Mujer</label>
+      </div>
+
+      <div>
+        <label for="correo">Correo</label>
+        <input type="text" name="correo" id="correo">
+      </div>
+
+      <div>
+        <input type="checkbox" name="ofertas" id="ofertas" checked>
+        <label for="ofertas">Deseo recibir información sobre novedades y ofertas</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="condiciones" id="condiciones">
+        <label for="condiciones">Declaro haber leído y aceptoar las condiciones generales del programa y la normativa sobre protección de datos</label>
+      </div>
+
+      <div>
+        <button type="submit">Enviar</button>
+      </div>
+
+    </form>
+  </body>
+</html>
+
+<!-- 
+type="radio" → qué tipo de input es.
+name="sexo" → grupo de radios (para que solo uno se active).
+id="sexo-hombre" → identificador único, vincula con label.
+value="hombre" → valor que se manda al servidor si el usuario lo elige. -->
