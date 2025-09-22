@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de registro - Mi web</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" />
+      </div>
+      <div>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" />
+      </div>
+
+      <div>
+        <span>Sexo: </span>
+        <input type="radio" name="sexo" id="sexo-hombre" value="hombre" />
+        <label for="sexo-hombre">Hombre</label>
+
+        <input type="radio" name="sexo" id="sexo-mujer" value="mujer" />
+        <label for="sexo-mujer">Mujer</label>
+      </div>
+
+      <div>
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" id="correo" />
+      </div>
+
+      <div>
+        <label for="poblacion">Población</label>
+        <select name="poblacion" id="poblacion">
+          <option value="Alicante" selected>Alicante</option>
+          <option value="Madrid">Madrid</option>
+          <option value="Sevilla">Sevilla</option>
+          <option value="Valencia">Valencia</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="descripcion">Descripcion: </label>
+        <textarea name="" id="descripcion" rows="10" cols="30"></textarea>
+      </div>
+
+      <div>
+        <input type="checkbox" name="ofertas" id="ofertas" checked />
+        <label for="ofertas"
+          >Deseo recibir información sobre novedades y ofertas</label
+        >
+      </div>
+      <div>
+        <input type="checkbox" name="condiciones" id="condiciones" />
+        <label for="condiciones"
+          >Declaro haber leído y aceptar las condiciones generales del programa
+          y la normativa sobre protección de datos.</label
+        >
+      </div>
+
+      <div>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>
