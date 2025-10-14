@@ -1,22 +1,12 @@
-# Ignorar la carpeta de test DENTRO de tp5
+# Archivos de sistema operativo
+.DS_Store
+
+# Archivos comprimidos de entregas y presentaciones
+*.zip
+*.ppsx
+*.pdf
+
+# Carpetas de prueba o ejercicios adicionales
 tp5/test_tp5/
 
-# Ignorar archivos de PowerPoint
-*.ppsx
-
-# --- Reglas para incluir solo ciertos archivos ---
-
-# Ignorar TODO por defecto
-*
-
-# NO ignorar directorios, para poder entrar en ellos
-!*/
-
-# Permitir (NO ignorar) solo estos tipos de archivo
-!*.html
-!*.css
-!*.js
-!README.md
-
-# Asegurar que el propio .gitignore siempre sea rastreado
-!.gitignore
+# Puedes agregar aquí cualquier otra carpeta o archivo que no quieras subir
