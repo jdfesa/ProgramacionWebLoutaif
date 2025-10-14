@@ -1,0 +1,74 @@
+/* Estilos generales para la tabla y celdas para que se vea mejor */
+table {
+  /* Une los bordes de las celdas en uno solo en lugar de tenerlos separados */
+  border-collapse: collapse;
+}
+
+td {
+  /* Añade un espacio interno en cada celda para que el texto no esté pegado al borde */
+  padding: 8px;
+  /* Centra el texto horizontalmente */
+  text-align: center;
+  /* Elige una fuente monoespaciada para un look más técnico */
+  font-family: monospace;
+  /* Pone el texto en negrita */
+  font-weight: bold;
+  /* Aumenta el tamaño de la letra */
+  font-size: 1.2em;
+}
+
+/* --- 1. Definir el COLOR DEL TEXTO para cada FILA --- */
+/*
+  Cada regla de esta sección busca una fila <tr> con una clase específica
+  (ej. ".red-row") y le asigna un color de texto a todo lo que esté dentro.
+*/
+.teal-row {
+  color: teal;
+}
+.red-row {
+  color: red;
+}
+.blue-row {
+  color: blue;
+}
+.orange-row {
+  color: orange;
+}
+.purple-row {
+  color: purple;
+}
+.olive-row {
+  color: olive;
+}
+.fuchsia-row {
+  color: fuchsia;
+}
+.green-row {
+  color: green;
+}
+
+/* --- 2. Definir el FONDO para cada COLUMNA (Versión Simple) --- */
+/*
+  ACLARACIÓN SOBRE :nth-child(n):
+  ":nth-child" es una "pseudo-clase". Es una herramienta de CSS que selecciona
+  elementos basándose en su POSICIÓN dentro de un grupo de hermanos.
+
+  El número entre paréntesis (n) es el argumento e indica la posición exacta
+  del hijo que queremos seleccionar. Por ejemplo, :nth-child(2) significa
+  "selecciona solo al segundo hijo".
+*/
+
+/* Esta regla busca cada <td> que sea el SEGUNDO hijo de su fila <tr> */
+td:nth-child(2) {
+  background-color: red;
+}
+
+/* Esta regla busca cada <td> que sea el TERCER hijo de su fila <tr> */
+td:nth-child(3) {
+  background-color: green;
+}
+
+/* Esta regla busca cada <td> que sea el CUARTO hijo de su fila <tr> */
+td:nth-child(4) {
+  background-color: blue;
+}
