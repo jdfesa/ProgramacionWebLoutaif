@@ -1,10 +1,12 @@
 # Archivos de sistema operativo
 .DS_Store
 
-# Archivos comprimidos de entregas y presentaciones
+# Archivos multimedia y documentos grandes
 *.zip
 *.ppsx
 *.pdf
+*.mp4
+*.png
 
 # Carpetas de prueba o ejercicios adicionales
 tp5/test_tp5/
