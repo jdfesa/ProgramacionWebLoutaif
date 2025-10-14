@@ -1,13 +1,22 @@
+# Ignorar la carpeta de test DENTRO de tp5
+tp5/test_tp5/
+
+# Ignorar archivos de PowerPoint
+*.ppsx
+
+# --- Reglas para incluir solo ciertos archivos ---
+
 # Ignorar TODO por defecto
 *
 
-# Permitir bajar a subcarpetas
+# NO ignorar directorios, para poder entrar en ellos
 !*/
 
-# Permitir solo estos tipos
+# Permitir (NO ignorar) solo estos tipos de archivo
 !*.html
 !*.css
 !*.js
+!README.md
 
-# Asegurar que el propio .gitignore quede trackeado
+# Asegurar que el propio .gitignore siempre sea rastreado
 !.gitignore
