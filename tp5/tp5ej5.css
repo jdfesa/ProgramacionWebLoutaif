@@ -1,0 +1,43 @@
+/*
+  ORDEN DE LAS REGLAS (LVFHA):
+  1. :link    -> Estado normal, no visitado.
+  2. :visited -> Ya ha sido visitado.
+  3. :focus   -> Seleccionado con el teclado (ej. con la tecla Tab).
+  4. :hover   -> El cursor del mouse está sobre él.
+  5. :active  -> Se está haciendo clic en él.
+
+  Este orden evita que los estilos se pisen. Por ejemplo, la regla :hover
+  se pone después de :link y :visited para que funcione tanto en enlaces
+  visitados como no visitados.
+*/
+
+/* Estado normal del enlace */
+a:link {
+  color: red;
+  text-decoration: none; /* none = sin subrayado */
+}
+
+/* Enlace ya visitado */
+a:visited {
+  color: darkgreen;
+  text-decoration: none;
+}
+
+/* Enlace con el foco del teclado */
+a:focus {
+  color: blue;
+  text-decoration: underline; /* underline = con subrayado */
+}
+
+/* Cuando el cursor del mouse está sobre el enlace */
+a:hover {
+  color: white;
+  background-color: red;
+  text-decoration: underline;
+}
+
+/* Enlace activo (mientras se hace clic) */
+a:active {
+  color: orange;
+  text-decoration: none;
+}
